@@ -33,7 +33,7 @@ async def deannawisdom(ctx, number: int = 1):
         await ctx.send(response)
         i += 1
 
-@client.command(name='bmw', help="Randomly generated response to the command bmw")
+@client.command(name='bmw', help="Find out what Dowling thinks about BMW 💀")
 async def bmw(ctx, number: int = 1):
     i = 0
     while i < number:
@@ -41,7 +41,7 @@ async def bmw(ctx, number: int = 1):
         await ctx.send(response)
         i += 1
 
-@client.command(name='lebron', help="Randomly generated response to the command lebron")
+@client.command(name='lebron', help="Lebron James, no explanation needed")
 async def lebron(ctx, number: int = 1):
     i = 0
     while i < number:
@@ -49,7 +49,7 @@ async def lebron(ctx, number: int = 1):
         await ctx.send(response)
         i += 1
 
-@client.command(name='ivy', help="Randomly generated response to describe what Ivy Tran is")
+@client.command(name='ivy', help="Time to find out what Ivy Tran really is 💀")
 async def ivy(ctx, number: int = 1):
     i = 0
     while i < number:
@@ -57,7 +57,7 @@ async def ivy(ctx, number: int = 1):
         await ctx.send(response)
         i += 1
 
-@client.command(name='hassan', help="Randomly generated response to describe what Hassan Wajid is")
+@client.command(name='hassan', help="Time to found out what Hassan really is 💀")
 async def hassan(ctx, number: int = 1):
     i = 0
     while i < number:
@@ -65,7 +65,7 @@ async def hassan(ctx, number: int = 1):
         await ctx.send(response)
         i += 1
 
-@client.command(name='monkey', help="Randomly generated response to the command monkey")
+@client.command(name='monkey', help="Monkey monkey")
 async def monkey(ctx, number: int = 1):
     i = 0
     while i < number:
@@ -73,7 +73,7 @@ async def monkey(ctx, number: int = 1):
         await ctx.send(response)
         i += 1
 
-@client.command(name='doyoulikeme?', help="Find out if momma Dowling likes you or not...")
+@client.command(name='doyoulikeme?', help="Find out if momma Dowling likes you or not... 💀")
 async def doyoulikeme(ctx, number: int = 1):
     i = 0
     while i < number:
@@ -81,6 +81,29 @@ async def doyoulikeme(ctx, number: int = 1):
         await ctx.send(response)
         i += 1
 
+@client.command(name='millergrove', help="Wisdom straight from milla grove 💀")
+async def millergrove(ctx, number: int = 1):
+    i = 0
+    while i < number:
+        response = random.choice(wisdom["millergrove"])
+        await ctx.send(response)
+        i += 1
+
+@client.command(name='roast', help="Mrs. Dowling will roast the shit out of you 💀")
+async def roast(ctx, number: int = 1):
+    i = 0
+    while i < number:
+        response = random.choice(wisdom["roast"])
+        await ctx.send(response)
+        i += 1
+
+@client.command(name='bababoey', help="Bababoey")
+async def bababoey(ctx, number: int = 1):
+    i = 0
+    while i < number:
+        response = random.choice(wisdom["bababoey"])
+        await ctx.send(response)
+        i += 1
 
 keep_alive.keep_alive()
 token = os.environ.get("DISCORD_BOT_SECRET")
